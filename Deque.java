@@ -85,7 +85,7 @@ public class Deque <Item> implements Iterable<Item>{
         private No acessadoultimo = null;
 
         public boolean hasNext(){ return indice < (n);}
-        public boolean hasPrevius(){return indice>0;}
+        public boolean hasPrevious(){return indice>0;}
         public int previousIndex(){return indice -1;}
         public int nextIndex(){return indice;}
 
