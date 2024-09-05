@@ -152,7 +152,7 @@ public class Deque <Item> implements Iterable<Item>{
         StringBuilder s = new StringBuilder();
         for(Item item : this)
             s.append(item + " ");
-        return s.toString();
+        return s.toString();d
     }
 
     public static void main(String[] args) {
