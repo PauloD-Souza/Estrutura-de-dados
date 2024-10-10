@@ -225,15 +225,17 @@ public class DequeSearch<Key, Item> implements Iterable<Item> {
 
     public String toString() {
         StringBuilder s = new StringBuilder();
-        for (Item item : this)
-        s.append(item + " ");
+        for (Item item : this){
+            s.append(item + " ");
+        }
         return s.toString();
     }
 
     public Iterable<Key> keys() {
         Deque<Key> queue = new Deque<Key>();
-        for (No x = Sentinela.prox; x != Sentinela; x = x.prox)
+        for (No x = Sentinela.prox; x != Sentinela; x = x.prox){
             queue.push_back(x.chave);
+        }
         return queue;    
     }
 
